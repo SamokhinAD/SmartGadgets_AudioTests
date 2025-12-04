@@ -4,11 +4,11 @@ from scipy.io import wavfile
 import os
 
 def calculate_rms(data):
-    """Рассчитывает среднеквадратичную амплитуду (RMS)."""
+    """Расчет среднеквадратичной амплитуды (RMS)."""
     return np.sqrt(np.mean(data**2))
 
 def analyze_audio(file_path:str):
-    """Загружает, анализирует и визуализирует аудиофайл wav."""
+    """Загрузка, анализ и визуализация аудиофайла wav."""
     if not os.path.exists(file_path):
         print(f"Ошибка: Файл не найден по пути {file_path}")
         return
@@ -32,7 +32,7 @@ def analyze_audio(file_path:str):
     duration = len(data) / sample_rate
     rms = calculate_rms(data)
 
-    print("--- Анализ Аудиофайла ---")
+    print("--- Анализ аудиофайла ---")
     print(f"Файл: {os.path.basename(file_path)}")
     print(f"Частота дискретизации (Гц): {sample_rate}")
     print(f"Продолжительность (с): {duration:.2f}")
