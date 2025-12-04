@@ -28,7 +28,7 @@ class AcousticTest(unittest.TestCase):
         pass
 
     def test_voice_recognition_in_noise(self):
-        """Тест 1: Проверка точности распознавания при фоновой музыке."""
+        """Тест 1: Проверка точности распознавания при фоном шуме."""
         noise = self.config.get('noise_type')
         print(f"\n[Запуск] Тест распознавания при шуме: {noise}")
         
