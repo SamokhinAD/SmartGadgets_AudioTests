@@ -1,0 +1,8 @@
+{
+    "test_parameters": {
+        "device_model": "Alice_A3",
+        "noise_level_db": 65,
+        "noise_type": "music_hiphop",
+        "mic_distance_cm": 30
+    }
+}
