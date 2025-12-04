@@ -8,7 +8,7 @@ TEST_DEVICE_IP = "192.168.1.101"
 # Имитация директории, где хранятся логи
 LOG_DIR = "./test_logs" 
 
-# Проверяет доступность устройства с помощью команды ping.
+# Проверяет доступность устройства с помощью команды ping
 def check_device_connection(ip):
     print(f"Проверка доступности устройства 1 ({ip})...")
     # Команда ping адаптирована для кросс-платформенности:
@@ -49,7 +49,7 @@ def clear_test_logs(directory):
         return False
 
 def setup_environment():
-    print("--- Запуск Автоматических Настроек Тестовой Среды ---")
+    print("--- Запуск автоматических настроек тестовой среды ---")
     
     # Проверка подключения
     connectivity_ok = check_device_connection(TEST_DEVICE_IP)
